@@ -13,6 +13,12 @@ module Middleman
     def install_npm_dependencies
       run 'npm install .'
     end
+
+    def copy_tachyons_to_src
+      if yes?('Do you to copy the Tachyons source to your local project?')
+        run 'rake tachyons:copy'
+      end
+    end
     
   end
 end

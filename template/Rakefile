@@ -1,0 +1,14 @@
+require 'fileutils'
+
+namespace :tachyons do
+  desc 'Copy Tachyons source to project assets'
+  task :copy do
+    root  = File.expand_path(File.dirname(__FILE__))
+    src   = File.join(root, 'node_modules/tachyons-sass')
+    dest  = File.join(root, 'assets/stylesheets')
+
+    puts "Copying Tachyons source...\nFrom:\t#{src}\nTo:\t#{dest}"
+    FileUtils.copy_file File.join(src, 'tachyons.scss'), File.join(dest, 'tachyons.scss')
+    FileUtils.copy_entry File.join(src, 'scss'), File.join(dest, 'scss')
+  end
+end

@@ -4,21 +4,14 @@
 # or operating system, you probably want to add a global ignore instead:
 # git config --global core.excludesfile ~/.gitignore_global
 
-# Ignore .DS_store file
+# Ignore hidden files amd directories
 .DS_Store
-
-# Ignore bundler config
 /.bundle
-
-# Ignore cache
 /.sass-cache
 /.cache
-
-# Ingore rvm
 /.ruby-*
 
-# Ignore the build directory
+# Ignore project directories
 /build
-
-# Ignore node_modules
 /node_modules
+/tmp
