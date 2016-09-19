@@ -1,3 +1,7 @@
+# Local configs
+set :site_name, 'PushKit'
+set :version,   'v0.0.1.alpha.1'
+
 ###
 # Page options, layouts, aliases and proxies
 ###
