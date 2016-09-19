@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+
+# Middleman Gems
+gem 'middleman'
+gem 'middleman-livereload'
